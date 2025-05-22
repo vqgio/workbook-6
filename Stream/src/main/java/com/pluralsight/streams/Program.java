@@ -31,6 +31,7 @@ public class Program {
         for (Person person : searchPeople) {
             System.out.println(person);
         }
+        //did stream methods before ex2...
         System.out.println("\nPeople Details: ");
         double averageAge = people.stream().mapToInt(Person::getAge).average().orElse(0);
         System.out.println("\nAverage age: " + averageAge);
